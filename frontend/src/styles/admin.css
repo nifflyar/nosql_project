@@ -1,0 +1,89 @@
+.admin-tabs {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-tabs a {
+    padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+    border-bottom: 2px solid transparent;
+}
+
+.admin-tabs a.active {
+    color: #111;
+    border-bottom-color: #111;
+}
+
+.admin-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: var(--shadow2);
+    padding: 22px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+@media (max-width: 900px) {
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: #777;
+}
+
+.stat-value {
+    font-family: var(--serif);
+    font-size: clamp(28px, 5vw, 56px);
+    font-weight: 700;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.admin-card-currency {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.admin-card-value {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(26px, 4vw, 42px);
+    line-height: 1.1;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    color: #2a2a2a;
+}

@@ -1,0 +1,135 @@
+.section {
+    padding: 64px 0;
+}
+
+.kicker {
+    text-align: center;
+    color: #7b7b7b;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 0 18px;
+}
+
+.h1 {
+    text-align: center;
+    font-family: var(--serif);
+    font-size: 48px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    color: #2a2a2a;
+}
+
+.sub {
+    text-align: center;
+    color: #6a6a6a;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0;
+}
+
+.divider {
+    width: 70px;
+    height: 1px;
+    background: #333;
+    margin: 22px auto 0;
+    opacity: .5;
+}
+
+.feature-grid {
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+@media (max-width: 980px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tile {
+    background: #efeeed;
+    border: 1px solid #e0dedc;
+    box-shadow: var(--shadow2);
+    overflow: hidden;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tile-img {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    filter: saturate(.95);
+}
+
+.tile-label {
+    background: #2f2f2f;
+    color: #f1f1f1;
+    padding: 16px 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.tile-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 34px 18px;
+    text-align: center;
+}
+
+.tile-mid h3 {
+    font-family: var(--serif);
+    font-size: 56px;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #2a2a2a;
+}
+
+.tile-sale::after {
+    display: none;
+}
+
+.tile-sale .tile-mid {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    color: #111;
+    padding-top: 20px;
+}
+
+.tile-sale h3 {
+    font-family: var(--serif);
+    font-size: 56px;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+.tile-sale p {
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.tile-mid p {
+    margin: 10px 0 0;
+    color: #666;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}

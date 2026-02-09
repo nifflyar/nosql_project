@@ -1,0 +1,74 @@
+.footerbar {
+    background: var(--dark);
+    color: #d7d7d7;
+    padding: 60px 0;
+}
+
+.footergrid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 26px;
+    align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+    .footergrid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+.footergrid > div {
+    text-align: center;
+    transform: translateX(-25px);
+}
+
+.ftitle {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 0 12px;
+    color: #cfcfcf;
+}
+
+.fmuted {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.finput {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, .20);
+    background: rgba(255, 255, 255, .08);
+    color: #fff;
+    padding: 0 12px;
+    margin-bottom: 10px;
+}
+
+.fbtn {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, .20);
+    background: rgba(255, 255, 255, .18);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 34px;
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.notice {
+    text-align: center;
+    color: #777;
+    padding: 14px 0 40px;
+}
